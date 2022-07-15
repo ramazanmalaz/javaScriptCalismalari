@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // vücut kitle indeksi hesaplar
+
+      var boy = Number(prompt("Boyunuzu Giriniz"));
+      var kilo = Number(prompt("Kilonuzu Giriniz"));
+
+      var vki = Number((kilo / boy) ^ 2);
+
+      if (18.5 <= vki && vki <= 25) {
+        console.log("İdeal Kilodasınız");
+      } else {
+        console.log("İdeal Kiloda değilsiniz");
+      }
+    </script>
+  </body>
+</html>

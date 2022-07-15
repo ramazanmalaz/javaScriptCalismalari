@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 500 1000 arası 3'e 7'e tam bölünen sayıların adedi
+      var adet3 = 0;
+      var adet7 = 0;
+
+      for (var i = 500; i <= 1000; i++) {
+        if (i % 3 == 0) {
+          adet3++;
+        } 
+        if (i % 7 == 0) {
+          adet7++;
+        }
+      }
+      alert("3 ile tam bolunenler: " + adet3 + "7 ile tam bilinenler: "+ adet7);
+      
+    </script>
+  </body>
+</html>

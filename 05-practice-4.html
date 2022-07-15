@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // girilen 3 sayinin ortalamasını bulup 1. sayıdan büyükse kar yazdıran satır 
+
+
+      var s1 = Number(prompt("1. Sayiyi Giriniz"));
+      var s2 = Number(prompt("2. Sayiyi Giriniz"));
+      var s3 = Number(prompt("3. Sayiyi Giriniz"));
+      var ort = (s1 + s2 + s3) / 3;
+
+      if (ort > s1) {
+        console.log("Kâr",ort,s1);
+      } 
+      else {
+        console.log("Zarar");
+      }
+    </script>
+  </body>
+</html>

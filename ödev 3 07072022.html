@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // piramid yıldız yazdıran program
+      var metin = "";
+      var a = "";
+
+      for (var i = 1; i <= 6; i++) {
+        for (var k = i; k <= 6; k++) {
+          metin = metin + " ";
+        }
+        for (var l = 1; l <= i; l++) {
+          metin = metin + "*";
+          metin = metin + " ";
+        }
+        metin = metin + "\n";
+      }
+      console.log(metin);
+    </script>
+  </body>
+</html>
