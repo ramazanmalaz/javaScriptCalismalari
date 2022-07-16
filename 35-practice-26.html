@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Bir dizi içindeki sayıları genel ortalamasında n küçük olan kaç adet sayı olduğunu bulan programı yapınız.
+      var sayilar = [12, 56, 14, 67, 89, 33, 22];
+
+      function getAvg(arr) {
+        var total = 0;
+        for (var i = 0; i < arr.length; i++) {
+          total += arr[i];
+        }
+        return total / arr.length;
+      }
+
+      function getCount(arr, avg) {
+        var cnt = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] < avg) {
+            cnt++;
+          }
+        }
+        return cnt;
+      }
+      var sayilarAvg = getAvg(sayilar);
+      console.log(sayilarAvg);
+
+      var sayilarCnt = getCount(sayilar, sayilarAvg);
+
+      console.log(sayilarCnt);
+    </script>
+  </body>
+</html>
